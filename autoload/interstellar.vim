@@ -13,6 +13,7 @@ let s:colors.dark_bg = pgmnt#color#hsl(233, 0.3, 0.2)
 
 let s:sat = 1.0
 let s:light = 0.75
+let s:colors.green = pgmnt#color#hsl(120, 1.0, 0.75)
 let s:colors.orange = pgmnt#color#hsl(30, 1.0, s:light - 0.1)
 let s:colors.light_blue = pgmnt#color#hsl(185, 1.0, s:light)
 let s:colors.blue = pgmnt#color#hsl(233, s:sat, s:light)
