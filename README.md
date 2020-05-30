@@ -14,3 +14,7 @@ spelling more.
 Currently vale requires [pgmnt.vim](https://github.com/cocopon/pgmnt.vim) in
 order to compute the colors (since they're specified in HSL). Eventually I may
 release a 'precompiled' version that just embeds raw hex codes.
+
+## Screenshots
+
+![screenshot](screenshot.png)
