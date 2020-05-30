@@ -1,7 +1,7 @@
-" Definitions for all the colors interstellar uses.
+" Definitions for all the colors vale uses.
 "
-" This defines a global named interstellar#colors with attributes for all the
-" color names in use. Recommended to do `let s:colors = g:interstellar#colors`
+" This defines a global named vale#colors with attributes for all the
+" color names in use. Recommended to do `let s:colors = g:vale#colors`
 " so you can abbreviate.
 
 let s:colors = {}
@@ -21,6 +21,6 @@ let s:colors.purple = pgmnt#color#hsl(263, s:sat, 0.7)
 let s:colors.light_purple = pgmnt#color#hsl(263, 1.0, 0.8)
 let s:colors.pink = pgmnt#color#hsl(338, s:sat, s:light)
 
-let g:interstellar#colors = s:colors
+let g:vale#colors = s:colors
 
 " vim:shiftwidth=2:foldmethod=marker

@@ -1,6 +1,6 @@
 " vim:shiftwidth=2
 
-let s:colors = g:interstellar#colors
+let s:colors = g:vale#colors
 let s:p = {}
 
 " TODO: Figure out cterm colors.
@@ -30,4 +30,4 @@ let s:b_inactive = [s:colors.fg, s:inactive, 0, 0]
 let s:c_inactive = [s:colors.fg, s:inactive, 0, 0]
 let s:p.inactive = airline#themes#generate_color_map(s:a_inactive, s:b_inactive, s:c_inactive)
 
-let g:airline#themes#interstellar#palette = s:p
+let g:airline#themes#vale#palette = s:p

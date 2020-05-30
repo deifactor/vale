@@ -10,9 +10,9 @@ if exists('syntax_on')
   syntax reset
 endif
  
-let g:colors_name = 'interstellar'
+let g:colors_name = 'vale'
 
-let s:colors = g:interstellar#colors
+let s:colors = g:vale#colors
 
 function! s:hi(group, style)
   let fg = has_key(a:style, "fg") ? a:style.fg : "NONE"
