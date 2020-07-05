@@ -58,6 +58,9 @@ call s:hi("VertSplit", {"fg": s:colors.fg, "bg": s:colors.bg})
 
 call s:hi("Todo", {"fg": s:colors.orange, "bg": s:colors.dark_bg, "gui": "bold"})
 
+call s:hi("Pmenu", {"fg": s:colors.fg, "bg": s:colors.light_bg})
+call s:hi("PmenuSel", {"fg": s:colors.fg, "bg": s:colors.dark_bg, "gui": "bold"})
+
 call s:hi("SpellCap", {"gui": "undercurl", "guisp": s:colors.orange})
 
 " }}}
