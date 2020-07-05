@@ -18,7 +18,8 @@ function! s:hi(group, style)
   let fg = has_key(a:style, "fg") ? a:style.fg : "NONE"
   let bg = has_key(a:style, "bg") ? a:style.bg : "NONE"
   let gui = has_key(a:style, "gui") ? a:style.gui : "NONE"
-  execute "highlight!" a:group "guifg=" fg "guibg=" bg "cterm=None" "gui=" gui
+  let guisp = has_key(a:style, "guisp") ? a:style.guisp : "NONE"
+  execute "highlight!" a:group "guifg=" fg "guibg=" bg "cterm=None" "gui=" gui "guisp=" guisp
 endfunction
 
 " }}}
@@ -48,7 +49,7 @@ call s:hi("Constant", {"fg": s:colors.light_purple})
 
 call s:hi("Number", {"fg": s:colors.light_purple})
 
-call s:hi("SpecialComment", {"fg": s:colors.orange, "gui": "italic"})
+call s:hi("SpecialComment", {"fg": s:colors.light_green, "gui": "italic"})
 
 call s:hi("Folded", {"gui": "bold"})
 
@@ -56,6 +57,8 @@ call s:hi("SignColumn", {"fg": s:colors.fg, "bg": s:colors.light_bg})
 call s:hi("VertSplit", {"fg": s:colors.fg, "bg": s:colors.bg})
 
 call s:hi("Todo", {"fg": s:colors.orange, "bg": s:colors.dark_bg, "gui": "bold"})
+
+call s:hi("SpellCap", {"gui": "undercurl", "guisp": s:colors.orange})
 
 " }}}
 
